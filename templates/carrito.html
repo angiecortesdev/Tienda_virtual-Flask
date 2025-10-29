@@ -1,0 +1,49 @@
+{% extends "base.html" %} {% block title %}Inicio - Mi Tienda{% endblock %}
+{%block content %}
+<div class="container mt-4">
+  <h2 class="mb-4 text-center">Tu Carrito de Compras</h2>
+  <div class="table-responsive">
+    <table class="table table-bordered align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Producto</th>
+          <th scope="col">Descripción</th>
+          <th scope="col">Precio Unitario</th>
+          <th scope="col">Cantidad</th>
+          <th scope="col">Total</th>
+          <th scope="col">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Ejemplo de fila de producto en el carrito -->
+        <tr>
+          <td>
+            <img
+              src="https://via.placeholder.com/100x100"
+              alt="Producto 1"
+              class="img-thumbnail"
+            />
+            <span class="ms-2">Zapatos Deportivos</span>
+          </td>
+          <td>Comodidad y estilo para todos los días.</td>
+          <td>$149.900</td>
+          <td>
+            <h5>1</h5>
+          </td>
+          <td>$149.900</td>
+          <td>
+            <button class="btn btn-danger btn-sm">Eliminar</button>
+          </td>
+        </tr>
+        <!-- Fin del ejemplo -->
+      </tbody>
+    </table>
+  </div>
+  <div class="d-flex justify-content-end">
+    <h4>Total a Pagar: <span class="text-success">$149.900</span></h4>
+  </div>
+  <div class="d-flex justify-content-end mt-3">
+    <button class="btn btn-primary btn-lg">Proceder al Pago</button>
+  </div>
+
+{%endblock%}

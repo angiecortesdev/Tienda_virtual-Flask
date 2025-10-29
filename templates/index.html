@@ -1,0 +1,44 @@
+{% extends "base.html" %} {% block title %}Inicio - Mi Tienda{% endblock %}
+{%block content %}
+
+<div class="container mt-4">
+  <div class="row">
+    <!-- Producto 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img
+          src="https://via.placeholder.com/300x200"
+          class="card-img-top"
+          alt="Producto 1"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Zapatos Deportivos</h5>
+          <p class="card-text text-muted">
+            Comodidad y estilo para todos los días.
+          </p>
+          <h6 class="text-success fw-bold mb-3">$149.900</h6>
+          <a href="#" class="btn btn-primary w-100">Agregar al carrito</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img
+          src="https://via.placeholder.com/300x200"
+          class="card-img-top"
+          alt="Producto 2"
+        />
+        <div class="card-body text-center">
+          <h5 class="card-title">Reloj Digital</h5>
+          <p class="card-text text-muted">Diseño moderno con pantalla LED.</p>
+          <h6 class="text-success fw-bold mb-3">$99.000</h6>
+          <a href="#" class="btn btn-primary w-100">Agregar al carrito</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{%endblock%}
